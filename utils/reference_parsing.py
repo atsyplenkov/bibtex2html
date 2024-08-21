@@ -1,6 +1,6 @@
-from g4f.client import Client
-from g4f.Provider import RetryProvider, PerplexityAi, Vercel, You
-
+# from g4f.client import Client
+# from g4f.Provider import RetryProvider, GigaChat, You
+import g4f
 
 # Function to send a prompt to GPT-3.5 Turbo and return the response
 def ask_gpt(prompt: str) -> str:
@@ -15,7 +15,7 @@ def ask_gpt(prompt: str) -> str:
     """
     # Try various providers
     # https://github.com/xtekky/gpt4free/blob/main/docs/client.md#use-a-list-of-providers-with-retryprovider
-    client = Client(provider=RetryProvider([PerplexityAi, Vercel, You], shuffle=True))
+    #client = Client(provider=RetryProvider([GigaChat], shuffle=False))
 
     # Read the GPT prompt
     with open("templates/prompt.md", "r") as file:
@@ -25,15 +25,15 @@ def ask_gpt(prompt: str) -> str:
     formatted_prompt = f"{md_content}: {prompt} \n\n Make sure that only the plain text is returned, do not try to return this as a markdown code block."
 
     # Send the formatted prompt to GPT-3.5 Turbo and get the response.
-    response = client.chat.completions.create(
-        model="",
+    response = g4f.ChatCompletion.create(
+        model="gpt-4",
         messages=[
             {"role": "user", "content": formatted_prompt}
         ],  # The user message to be sent to the model.
     )
 
     # Fix the doi link
-    response = response.choices[0].message.content.replace(
+    response = response.replace(
         "doi={https://doi.org/", "doi={"
     )
 
@@ -69,4 +69,3 @@ def batch_ask_gpt(prompts: str) -> str:
     responses = "\n\n".join(responses)
 
     return responses
-

@@ -66,18 +66,17 @@ app_ui = ui.page_navbar(
             )
         ),
     ),
-    ui.nav_panel("About", ui.markdown(open("README.md", encoding="utf-8").read())),
+    ui.nav_panel("About", ui.markdown(open("About.md", encoding="utf-8").read())),
     ui.nav_spacer(),
     ui.nav_control(ui.input_dark_mode(mode="light")),
     title="References to BibTeX/HTML converter",
-    # footer=ui.markdown(open("utils/footer.html", encoding="utf-8").read()),
     footer=ui.tags.p(
         "Made by Anatoly Tsyplenkov using ",
         ui.tags.i(ICONS["python"]),  # Python icon
         " and ",
         ui.tags.a("Shiny", href="https://shiny.posit.co/py/"),
         ". See source code at ",
-        ui.tags.a(ICONS["github"], href="https://github.com/your-repo"),
+        ui.tags.a(ICONS["github"], href="https://github.com/atsyplenkov/bibtex2html"),
         style="font-size: 12px; text-align: right; padding: 10px; border-top: 1px solid #ddd; margin-top: 20px;",
     ),
 )

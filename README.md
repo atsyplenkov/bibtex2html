@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://journals.psu.edu/geomorphica/">
-  <img src="figures/banner_geomorphica.png" height="80%">
+  <img src="figures/banner_geomorphica.webp" height="80%">
   </a>
 </div>
 

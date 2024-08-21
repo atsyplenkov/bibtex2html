@@ -9,8 +9,11 @@ This small application was created to ease the copyediting and typesetting of ar
 
 In the first tab, one can convert formatted references to BibTeX.
 
-> Mensh, B., & Kording, K. (2017). Ten simple rules for structuring papers. PLOS Computational Biology, 13(9), e1005619. https://doi.org/10.1371/journal.pcbi.1005619
+**From:**
 
+`Mensh, B., & Kording, K. (2017). Ten simple rules for structuring papers. PLOS Computational Biology, 13(9), e1005619. https://doi.org/10.1371/journal.pcbi.1005619`
+
+**To:**
 ```
 @article{mensh2017ten,
   title={Ten simple rules for structuring papers},

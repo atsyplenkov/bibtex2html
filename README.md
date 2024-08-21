@@ -1,3 +1,10 @@
+<div align="center">
+  <a href="https://journals.psu.edu/geomorphica/">
+  <img src="figures/banner_geomorphica.png" height="80%">
+  </a>
+</div>
+
+### Overview
 This small application was created to ease the copyediting and typesetting of articles submitted to the [Geomorphica](https://journals.psu.edu/geomorphica/) journal.
 
 In the first tab, one can convert formatted references to BibTeX.
@@ -24,3 +31,9 @@ The second tab allows users to upload a BibTeX file and create an APA7 style bib
 ```
 <p>Mensh, B., &amp; Kording, K. (2017). Ten simple rules for structuring papers. <i>PLOS Computational Biology</i>, <i>13</i>(9), e1005619. <a href="https://doi.org/10.1371/journal.pcbi.1005619" target="_blank">https://doi.org/10.1371/journal.pcbi.1005619</a><br></p>
 ```
+
+
+### Example
+<div align="center">
+  <img src="figures/example.gif" width="80%">
+</div>

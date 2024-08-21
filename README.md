@@ -36,7 +36,7 @@ The second tab allows users to upload a BibTeX file and create an APA7 style bib
 ```
 
 
-### Example
+### App in action
 <div align="center">
   <img src="figures/example.gif" width="80%">
 </div>
